@@ -1,0 +1,162 @@
+// $red: #49CA13;
+$red: #ED2939;
+$header-height: calc(50% - 50px);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  overflow-y: scroll;
+}
+
+body a {
+  color: $red;
+}
+
+.header {
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $red;
+  background-position: center;
+  width: 100%;
+  height: $header-height;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+    max-width: 80%;
+}
+
+.sticky + .content-wrapper {
+  padding-top: 50px;
+}
+
+.nav-links {
+  width: 100%;
+  min-height: 50px;
+  color: $red;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav-base {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
+    z-index: 4;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.link {
+  width: 32%;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link b {
+    border-bottom: 1px solid $red;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-drop {
+    width: 100%;
+    display: none;
+    background-color: white;
+    z-index: 3;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.nav-drop * {
+    color: $red;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    font-weight: bold;
+}
+
+.spacer {
+  width: 100%;
+  height: calc($header-height + 50px);
+}
+
+.header h1 {
+  align-self: center;
+  text-align: center;
+}
+
+.footer-wrapper ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.footer-wrapper li, .footer-wrapper p {
+  color: grey;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper div {
+  flex-grow: 1;
+}
+
+footer {
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: 1px solid gainsboro;
+}
+
+footer h2 {
+  font-size: 18px;
+}
+
+.svg-icon {
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    fill: currentColor;
+    padding-right: 5px;
+    vertical-align: text-bottom;
+}

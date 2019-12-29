@@ -1,0 +1,113 @@
+$red: #ED2939;
+
+.body {
+  color: rgba(0,0,0,.84);
+  font-family: Georgia, Times, serif;
+  overflow-y: none;
+}
+
+h2, h3 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.content-wrapper h2 {
+  width: 100%;
+  font-weight: 600;
+}
+
+.content-wrapper p {
+  width: 100%;
+}
+
+.content-container {
+  width: 75%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-right: 1px solid gainsboro;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+.deity-image {
+    align-self: center;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deity-image img {
+    max-width: 80%;
+}
+
+tbody {
+    text-align: center;
+}
+
+td {
+    border: 1px solid $red;
+}
+
+p strong em {
+    color: $red;
+}
+
+p strong {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+i {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: white;
+  z-index: 0;
+  position: relative;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.sidebar a {
+}
+
+a img {
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar img {
+    max-width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-top: 1px solid gainsboro;
+  }
+  
+  .content-container {
+    width: 100%;
+  }
+}

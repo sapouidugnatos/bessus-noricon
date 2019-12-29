@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>{{ page.title }} - Bessus Noricon</title>
+      <meta name="twitter:title" content="{{ page.title }}">
+      <meta property="og:title" content="{{ page.title }}" /> 
+      {% include head.html %}
+    </head>
+    <body>
+        {% include navigation.html %}
+        <div class="content-wrapper">
+          <div class="content-container">
+            <h2>{{ page.title }}</h2>
+            {{ content }}
+          </div>
+          {% include sidebar.html %}
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
